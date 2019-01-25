@@ -1,0 +1,26 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Centering Content</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="half-column block" >
+			<div class="big-row red" onclick="addClass(this)" id="red" ></div>
+			<div class="big-row blue" onclick="addClass(this)" id="blue" ></div>
+			<div class="big-row yellow" onclick="addClass(this)" id="yellow" ></div>
+		</div>
+
+		<div class="half-column green center-content" onclick="addClass(this)" id="green">
+			<center> <h1> CLICK FOR BEANS </h1>
+			<img src="image/poptart.jpg" class="restrict-img-size" id="poptart" onclick="showTrophy(this)"/>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
