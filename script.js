@@ -4,6 +4,7 @@
 // "el" stands for the "element" that was just clicked
 // "el" stands for the "element" that was just clicked
 
+
 function showTrophy(el){
 	document.getElementById("poptart").src = "image/beans.jpg";
 }

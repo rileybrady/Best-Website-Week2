@@ -54,3 +54,7 @@ opacity: 0.5;
 h1 {
 font-style: courier;
 }
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { transform: scale(1.2); }
