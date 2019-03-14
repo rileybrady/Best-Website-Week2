@@ -11,15 +11,35 @@
 
 	<!-- the <body> section is for all the content that is actually displayed on the page -->
 	<body>
-		<div class="half-column block" >
-			<div class="big-row red" onclick="addClass(this)" id="red" ></div>
-			<div class="big-row blue" onclick="addClass(this)" id="blue"></div>
-			<div class="big-row yellow" onclick="addClass(this)" id="yellow" ></div>
+		<div class="big-boy-blue">
+			<div class="big-top"> <img src="images/cropped_1.PNG" class="stretch_img"> </div>
+			<div class="big-bottom"> 
+				<div class="purple"> <img src="images/answer_1a.jpg" class="stretch_img"> </div>
+				<div class="purple"> <img src="images/distopia_1.jfif" class="stretch_img" onclick="nextImage(this)" id="one"> </div>
+				<div class="purple"> <img src="images/answer_1b.jfif" class="stretch_img"> </div>
+			</div>
+			<div class="big-top"> <img src="images/cropped_2.PNG" class="stretch_img"> </div>
+			<div class="big-bottom">
+				<div class="purple"> <img src="images/answer_2a.jfif" class="stretch_img"> </div>
+				<div class="purple"> <img src="images/answer_2b.jfif" class="stretch_img"> </div>
+				<div class="purple"> <img src="images/distopia_2.jpg" class="stretch_img" onclick="nextImage2(this)" id="two"> </div>
+			</div>
+			<div class="big-top"> <img src="images/cropped_3.PNG" class="stretch_img"> </div>
+			<div class="big-bottom">
+				<div class="purple"> <img src="images/distopia_3.jfif" class="stretch_img" onclick="nextImage3(this)" id="three"> </div>
+				<div class="purple"> <img src="images/answer_3a.jfif" class="stretch_img"> </div>
+				<div class="purple"> <img src="images/answer_3b.jfif" class="stretch_img"> </div>
+			<!-- This here is my most and advanced code for my HTML. The divs were very hard for to create,
+				 also adding the images. id's, and onClick attributes made this code even more complicated. -->
+			</div>
 		</div>
-		<br>
-		<div class="half-column green center-content" id="green">
-			<center> <h1> CLICK FOR BEANS </h1>
-			<img src="image/poptart.jpg" class="grow restrict-img-size" onclick="showTrophy(this)" id="poptart">
+		
+		<div class="skinny-boy-green">	
+			<div class="half-column grey center-content" class="stretch_img"> <h1>Match all pictures to unlock</h1></div>
+			<div class="half-column grey center-content"> <img src="images/check.png" class="stretch_img" onclick="checkYes(this)"> </div>
+			<div class="half-column  center-content block">
+				<img src="images/arrow.png" id="arrow2" class="stretch_img opaque" onClick="changeScreen()">
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
